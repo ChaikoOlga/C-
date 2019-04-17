@@ -1,0 +1,31 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+  int x1, y1, x2, y2;
+  cout << "Enter the cell number of the first horse figure horizontally (from 1 to 8): ";
+  cin >> x1;
+  cout << "Enter the cell number of the first horse figure vertically (from 1 to 8): ";
+  cin >> y1;
+  cout << "Enter the cell number of the second horse figure horizontally (from 1 to 8): ";
+  cin >> x2;
+  cout << "Enter the cell number of the second horse figure vertically (from 1 to 8): ";
+  cin >> y2;
+  int dx = abs(x1 - x2);
+  int dy = abs(y1 - y2);
+  //cout << dx;
+  //cout << dy;
+  if (dx == 2 and dy == 1)
+  {
+    cout << "Yes, horse figures beat each other";
+  }
+  else if (dx == 1 and dy == 2)
+  {
+    cout << "Yes, horse figures beat each other ";
+  }
+  else
+    cout << "No, horse figures do not beat each other";
+}
